@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/note_relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="90dp"
+    android:background="#a69e9e"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Buy Groceries"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/note_content"
+        android:layout_below="@id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Boost
+Shampoo"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/deleteNote"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete_forever_white_24dp"/>
+
+</RelativeLayout>

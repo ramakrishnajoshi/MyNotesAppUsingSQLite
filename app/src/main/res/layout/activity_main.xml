@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="compassites.com.mynotesappusingsqlite.MainActivity"
+    android:paddingTop="25dp"
+    android:paddingBottom="28dp"
+    android:background="#d6cece">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+    </android.support.v7.widget.SearchView>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Taker"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/searchView"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_notes"
+        android:layout_above="@id/add_new_note_button"
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/add_new_note_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add a new Note"
+        android:background="@color/teelGreen"/>
+
+</RelativeLayout>

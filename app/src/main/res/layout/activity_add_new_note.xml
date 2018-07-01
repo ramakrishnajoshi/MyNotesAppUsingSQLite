@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="compassites.com.mynotesappusingsqlite.AddNewNoteActivity">
+
+
+    <Button
+        android:id="@+id/addChecklistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Checklist"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_below="@id/addChecklistButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <EditText
+                android:id="@+id/title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:hint="Enter Title..."
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_textbox_border"
+                android:inputType="textCapSentences" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rl1">
+
+            <EditText
+                android:id="@+id/content_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="195dp"
+                android:hint="Enter content here"
+                android:textSize="14sp"
+                android:scrollbars="vertical"
+                style="@style/TextBox"
+                android:background="@drawable/shape_textbox_border"
+                android:gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="12dp"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:singleLine="false"/>
+
+        </RelativeLayout>
+
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:checked="true"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:text="First Item"
+        android:layout_below="@id/rl2"/>
+
+        <Button
+            android:id="@+id/save_note_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save this note"
+            android:layout_alignParentBottom="true"
+            android:background="@color/teelGreen" />
+</RelativeLayout>
